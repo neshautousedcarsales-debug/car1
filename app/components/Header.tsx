@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@heroui/react";
+import Image from "next/image";
 import Link from "next/link";
 
 const navLinks = [
@@ -28,9 +28,15 @@ export function Header() {
       </div>
       <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-0.5 text-xl font-semibold">
-          <span className="text-white">Auto</span>
-          <span className="text-[var(--accent)]">Mart</span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="Nesh Auto Sales Used Cars"
+            width={180}
+            height={48}
+            className="h-10 w-auto object-contain sm:h-12"
+            priority
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

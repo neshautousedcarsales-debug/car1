@@ -336,9 +336,6 @@ export function InventoryClient({ cars, initialMake }: { cars: Car[]; initialMak
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
-                <div className="absolute bottom-2 left-2 rounded bg-black/60 px-2 py-1 text-xs font-medium text-white">
-                  LAFAYETTE AUTO SALES
-                </div>
               </div>
               <div className="p-3 sm:p-4">
                 <h3 className="text-base font-semibold text-white sm:text-lg">

@@ -22,9 +22,9 @@ export default function AboutPage() {
       <Header />
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold text-white sm:text-4xl">About Nesh Auto Used Cars</h1>
+        <h1 className="text-3xl font-bold text-white sm:text-4xl">About Nesh Auto Sales Used Cars</h1>
         <p className="mt-4 max-w-3xl text-lg text-white/80">
-          Welcome to Nesh Auto Used Cars! We understand that finding the perfect combination of
+          Welcome to Nesh Auto Sales Used Cars! We understand that finding the perfect combination of
           quality and affordability can be difficult. Our goal is to provide you and the surrounding
           areas with the best buying experience possible.
         </p>

@@ -112,7 +112,7 @@ function HeroSlideshow() {
 
       <div className="relative z-10 container mx-auto max-w-7xl px-4 pt-16 pb-12 sm:px-6 lg:px-8">
         <h1 className="text-2xl text-center md:text-left font-bold tracking-tight text-white sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl md:max-w-lg lg:max-w-2xl capitalize">
-          Nesh Auto Sales Used Car{" "}
+          Nesh Auto Sales Used Cars{" "}
           <span className="text-[var(--accent)]">Services</span>
         </h1>
         <p className="mt-2 text-center md:text-left max-w-xl text-lg md:text-xl text-white/80">
@@ -293,10 +293,10 @@ export default function Home() {
           <div>
             <h2 className="flex items-center gap-0 text-2xl font-bold text-white">
               <span className="mr-3 inline-block h-8 w-1 rounded bg-[var(--accent)]" />
-              Welcome to Nesh Auto Used Cars
+              Welcome to Nesh Auto Sales Used Cars
             </h2>
             <p className="mt-4 leading-relaxed text-white/80">
-              Welcome to Nesh Auto Used Cars! At Nesh Auto, we understand that finding the
+              Welcome to Nesh Auto Sales Used Cars! We understand that finding the
               perfect combination of quality and affordability can be difficult. So we have
               made it our goal to provide you and the surrounding areas with the best buying
               experience possible. Take a look through our website to see what fits your needs

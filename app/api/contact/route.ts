@@ -93,7 +93,7 @@ export async function POST(request: Request) {
 
   try {
     await transporter.sendMail({
-      from: `"Nesh Auto Contact" <${getEnv("SMTP_USER")}>`,
+      from: `"Nesh Auto Sales Used Cars" <${getEnv("SMTP_USER")}>`,
       to: toEmail,
       replyTo: email,
       subject: emailSubject,

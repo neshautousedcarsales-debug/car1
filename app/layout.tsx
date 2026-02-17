@@ -14,8 +14,8 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "AutoMart | Find Your Dream Car",
-  description: "Buy and sell used cars. Find your dream car today.",
+  title: "Nesh Auto Sales Used Cars | Find Your Dream Car",
+  description: "Nesh Auto Sales Used Cars — buy and sell used cars. Find your dream car today.",
 };
 
 export default function RootLayout({

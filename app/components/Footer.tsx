@@ -1,16 +1,17 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const linkCol1 = [
-  { label: "Home", href: "#" },
-  { label: "About Us", href: "#about" },
-  { label: "Contact Us", href: "#contact" },
-  { label: "Privacy Policy", href: "#" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
+  { label: "Contact Us", href: "/contact" },
+  { label: "Privacy Policy", href: "/privacy" },
 ];
 const linkCol2 = [
-  { label: "FAQ", href: "#" },
-  { label: "Terms & Conditions", href: "#" },
-  { label: "Help", href: "#" },
-  { label: "Careers", href: "#" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Terms & Conditions", href: "/terms" },
+  { label: "Help", href: "/help" },
+  { label: "Careers", href: "/careers" },
 ];
 
 export function Footer() {
@@ -19,9 +20,14 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Link href="/" className="inline-flex items-center text-xl font-semibold">
-              <span className="text-white">Auto</span>
-              <span className="text-[var(--accent)]">Mart</span>
+            <Link href="/" className="inline-flex items-center">
+              <Image
+                src="/logo2.png"
+                alt="Nesh Auto Sales Used Cars"
+                width={200}
+                height={80}
+                className="h-14 w-auto object-contain sm:h-16"
+              />
             </Link>
           </div>
           <div>
@@ -50,19 +56,27 @@ export function Footer() {
           </div>
           <div>
             <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white/70">Contact Us</h4>
-            <p className="text-white/80">contact@automart.com</p>
-            <p className="mt-1 text-white/80">+1 (555) 123-4567</p>
-            <div className="mt-4 flex gap-3">
-              {["facebook", "twitter", "instagram", "linkedin"].map((name) => (
-                <a key={name} href="#" className="text-white/60 hover:text-white" aria-label={name}>
-                  <span className="h-5 w-5 rounded-full border border-white/40 flex items-center justify-center text-xs">f</span>
-                </a>
-              ))}
-            </div>
+            <p className="text-white/80">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=2950+Midway+Rd,+Decatur,+GA+30030"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
+                2950 Midway Rd, Decatur, GA 30030, United States
+              </a>
+            </p>
+            <p className="mt-1 text-white/80">
+              <a href="tel:+14704030168" className="hover:text-white">+1 470-403-0168</a>
+            </p>
+            <p className="mt-1 text-white/80">
+              <a href="mailto:info@automart.com" className="hover:text-white">info@automart.com</a>
+            </p>
+           
           </div>
         </div>
         <p className="mt-10 border-t border-[var(--border)] pt-6 text-center text-sm text-white/60">
-          © 2024 AutoMart. All rights reserved.
+          © 2024 Nesh Auto Sales Used Cars. All rights reserved.
         </p>
       </div>
     </footer>

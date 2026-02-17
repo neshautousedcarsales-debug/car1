@@ -67,16 +67,27 @@ export default function ContactPage() {
               </a>
             </div>
             <div className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-6">
-              <h2 className="text-lg font-semibold text-white">Nesh Auto Used Cars</h2>
+              <h2 className="text-lg font-semibold text-white">Nesh Auto Sales Used Cars</h2>
               <p className="mt-2 text-white/80">
                 We&apos;re here to help you find the right vehicle. Send us a message and we&apos;ll
                 get back to you as soon as possible.
               </p>
             </div>
+            <div className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-6">
+              <h2 className="text-lg font-semibold text-white">Location</h2>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=2950+Midway+Rd,+Decatur,+GA+30030"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 block text-[var(--accent)] hover:underline"
+              >
+                2950 Midway Rd, Decatur, GA 30030, United States
+              </a>
+            </div>
             <div className="relative aspect-video overflow-hidden rounded-xl bg-[var(--card)]">
               <iframe
-                title="Map"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=-84.5%2C33.6%2C-84.2%2C33.9&layer=mapnik"
+                title="Map - 2950 Midway Rd, Decatur, GA 30030"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-84.265%2C33.695%2C-84.252%2C33.705&layer=mapnik&marker=33.6999%2C-84.2585"
                 className="absolute inset-0 h-full w-full border-0"
                 allowFullScreen
               />
@@ -126,7 +137,7 @@ export default function ContactPage() {
               )}
               <Button
                 type="submit"
-                disabled={status === "sending"}
+                isDisabled={status === "sending"}
                 className="w-full bg-[var(--accent)] text-white disabled:opacity-70"
               >
                 {status === "sending" ? "Sending…" : "Send Message"}
