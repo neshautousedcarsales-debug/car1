@@ -24,9 +24,9 @@ export function Footer() {
               <Image
                 src="/logo2.png"
                 alt="Nesh Auto Sales Used Cars"
-                width={200}
-                height={80}
-                className="h-14 w-auto object-contain sm:h-16"
+                width={300}
+                height={150}
+                className="h-32 w-auto object-contain sm:h-32"
               />
             </Link>
           </div>

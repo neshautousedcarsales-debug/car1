@@ -123,7 +123,7 @@ function HeroSlideshow() {
       {/* Arrows */}
       <button
         onClick={prev}
-        className="absolute left-3 top-1/2 z-20 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur transition hover:bg-black/70 sm:left-5 sm:h-12 sm:w-12 touch-manipulation"
+        className="absolute hidden md:flex left-3 top-1/2 z-20 -translate-y-1/2 h-10 w-10 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur transition hover:bg-black/70 sm:left-5 sm:h-12 sm:w-12 touch-manipulation"
         aria-label="Previous slide"
       >
         <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -132,7 +132,7 @@ function HeroSlideshow() {
       </button>
       <button
         onClick={next}
-        className="absolute right-3 top-1/2 z-20 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur transition hover:bg-black/70 sm:right-5 sm:h-12 sm:w-12 touch-manipulation"
+        className="absolute hidden md:flex right-3 top-1/2 z-20 -translate-y-1/2 h-10 w-10 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur transition hover:bg-black/70 sm:right-5 sm:h-12 sm:w-12 touch-manipulation"
         aria-label="Next slide"
       >
         <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
