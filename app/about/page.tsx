@@ -1,7 +1,15 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Learn about Nesh Auto Sales Used Cars — your trusted used car dealer in Decatur, GA. Quality vehicles, honest service, and the best buying experience.",
+  openGraph: { title: "About Us", description: "Learn about Nesh Auto Sales Used Cars in Decatur, GA." },
+};
 
 const stats = [
   { value: "150+", label: "Total Brands" },

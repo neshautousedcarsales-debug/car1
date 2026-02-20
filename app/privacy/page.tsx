@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "Privacy policy for Nesh Auto Sales Used Cars. How we collect, use, and protect your information when you contact us or use our website.",
+  robots: { index: true, follow: true },
+};
 
 export default function PrivacyPage() {
   return (

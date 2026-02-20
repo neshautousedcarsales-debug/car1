@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+
+export const metadata: Metadata = {
+  title: "FAQ",
+  description:
+    "Frequently asked questions about Nesh Auto Sales Used Cars — financing, test drives, trade-ins, location, and more. Decatur, GA.",
+  openGraph: { title: "FAQ", description: "Common questions about buying used cars at Nesh Auto Sales Used Cars." },
+};
 
 const faqs = [
   {

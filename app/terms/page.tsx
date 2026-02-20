@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions",
+  description:
+    "Terms and conditions for using Nesh Auto Sales Used Cars website. Vehicle information, pricing, and communications policy.",
+  robots: { index: true, follow: true },
+};
 
 export default function TermsPage() {
   return (

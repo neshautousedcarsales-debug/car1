@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { readFile } from "fs/promises";
 import path from "path";
 import { notFound } from "next/navigation";
@@ -32,6 +33,35 @@ type Car = {
   images: string[];
 };
 
+function getCar(path: string, cars: Car[]): Car | undefined {
+  return cars.find((c) => c.id === path || c.stockNumber === path);
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  try {
+    const filePath = path.join(process.cwd(), "cars.json");
+    const data = await readFile(filePath, "utf-8");
+    const cars: Car[] = JSON.parse(data);
+    const car = getCar(id, cars);
+    if (!car) return { title: "Vehicle Not Found" };
+    const title = `${car.year} ${car.make} ${car.model}${car.trim ? ` ${car.trim}` : ""}`;
+    const priceStr = car.price != null ? `$${car.price.toLocaleString()}` : "Price on request";
+    const desc = `${title} — ${priceStr}. Stock #${car.stockNumber}. View details at Nesh Auto Sales Used Cars, Decatur, GA.`;
+    return {
+      title: title,
+      description: desc,
+      openGraph: { title, description: desc },
+    };
+  } catch {
+    return { title: "Vehicle" };
+  }
+}
+
 export default async function CarDetailsPage({
   params,
 }: {
@@ -41,7 +71,7 @@ export default async function CarDetailsPage({
   const filePath = path.join(process.cwd(), "cars.json");
   const data = await readFile(filePath, "utf-8");
   const cars: Car[] = JSON.parse(data);
-  const car = cars.find((c) => c.id === id || c.stockNumber === id);
+  const car = getCar(id, cars);
 
   if (!car) {
     notFound();

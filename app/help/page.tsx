@@ -1,6 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+
+export const metadata: Metadata = {
+  title: "Help",
+  description:
+    "Get help from Nesh Auto Sales Used Cars. Browse inventory, contact us, read the FAQ, or call (470) 403-0168. Decatur, GA.",
+  openGraph: { title: "Help", description: "Help and support for Nesh Auto Sales Used Cars." },
+};
 
 const helpLinks = [
   { label: "Browse our inventory", href: "/inventory", desc: "View all available vehicles with filters and search." },

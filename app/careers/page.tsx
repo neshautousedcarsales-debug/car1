@@ -1,6 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+
+export const metadata: Metadata = {
+  title: "Careers",
+  description:
+    "Join the team at Nesh Auto Sales Used Cars in Decatur, GA. We're hiring for sales, service, and administrative roles. Send your resume today.",
+  openGraph: { title: "Careers", description: "Careers at Nesh Auto Sales Used Cars." },
+};
 
 export default function CareersPage() {
   return (
