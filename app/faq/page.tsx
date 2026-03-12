@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: "Can I schedule a test drive?",
-    a: "Absolutely. Use the inquiry form on any vehicle listing or call us at +1 470-403-0168 to schedule a test drive at your convenience.",
+    a: "Absolutely. Use the inquiry form on any vehicle listing or call us at +1 404-510-4054 to schedule a test drive at your convenience.",
   },
   {
     q: "What is your return policy?",

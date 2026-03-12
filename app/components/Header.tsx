@@ -11,7 +11,7 @@ const navLinks = [
   { label: "Contact", href: "/contact" },
 ];
 
-const PHONE = "+1 470-403-0168";
+const PHONE = "+1 404-510-4054";
 const EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "info@automart.com";
 
 export function Header() {

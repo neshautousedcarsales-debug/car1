@@ -47,7 +47,7 @@ export default function HelpPage() {
           <p className="mt-2 text-white/80">
             Call us at{" "}
             <a href="tel:+14704030168" className="text-[var(--accent)] hover:underline">
-              +1 470-403-0168
+              +1 404-510-4054
             </a>{" "}
             or visit us at 2950 Midway Rd, Decatur, GA 30030.
           </p>

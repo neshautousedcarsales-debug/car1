@@ -67,7 +67,7 @@ export function Footer() {
               </a>
             </p>
             <p className="mt-1 text-white/80">
-              <a href="tel:+14704030168" className="hover:text-white">+1 470-403-0168</a>
+              <a href="tel:+14704030168" className="hover:text-white">+1 404-510-4054</a>
             </p>
             <p className="mt-1 text-white/80">
               <a href="mailto:info@automart.com" className="hover:text-white">info@automart.com</a>

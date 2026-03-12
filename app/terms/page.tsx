@@ -53,7 +53,7 @@ export default function TermsPage() {
               </a>{" "}
               or{" "}
               <a href="tel:+14704030168" className="text-[var(--accent)] hover:underline">
-                +1 470-403-0168
+                +1 404-510-4054
               </a>
               .
             </p>
